@@ -1017,6 +1017,7 @@ class eZSolr implements ezpSearchEngine
                     $localNodeIDList[] = $this->getNodeID( $doc );
                 }
             }
+            $localNodeIDList = array_unique($localNodeIDList);
 
             if ( !empty( $localNodeIDList ) )
             {
